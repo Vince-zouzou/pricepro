@@ -7,16 +7,13 @@ from langchain.callbacks.base import BaseCallbackHandler
 import base64
 
 def get_image_path():
-    """获取图片的绝对路径"""
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    image_path = os.path.join(current_dir,"images", "AI Brain.png")
-    # 转换为网页可访问的路径
-    return os.path.normpath(image_path).replace("\\UIs",'').replace("\\", "/")
+
+
+    return "./pages/AI Brain.png"
 
 def get_image_base64():
     with open(get_image_path(), "rb") as img_file:
         return base64.b64encode(img_file.read()).decode()
-
 
 def format_message(text):
     """
@@ -174,3 +171,4 @@ class StreamlitUICallbackHandler(BaseCallbackHandler):
 
     def __call__(self, *args, **kwargs):
         pass
+
