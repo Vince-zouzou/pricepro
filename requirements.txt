@@ -124,7 +124,7 @@ python-dateutil==2.9.0.post0
 python-decouple==3.8
 python-json-logger==3.3.0
 pytz==2025.2
-pywin32
+
 pywinpty==3.0.0
 PyYAML==6.0.2
 pyzmq==27.0.1
@@ -208,4 +208,5 @@ six==1.17.0
 threadpoolctl==3.6.0
 openpyxl
 tzdata==2025.2
+
 
