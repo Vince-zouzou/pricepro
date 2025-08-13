@@ -4,8 +4,8 @@ pandas
 streamlit_shadcn_ui
 langchain
 
-html
 openai
+
 
 
 
