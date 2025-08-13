@@ -20,9 +20,8 @@ def get_image_path():
     image_path = os.path.join(current_dir,"images", "AI Brain.png")
     # 转换为网页可访问的路径
     # 将路径中的 "\\pages" 替换为 "\\resources"，并将所有 "\\" 替换为 "/"
-    print(os.path.normpath(image_path).replace("\\pages",'\\resources').replace("\\", "/"))
     # 返回处理后的路径
-    return os.path.normpath(image_path).replace("\\pages",'\\resources').replace("\\", "/")
+    return os.path.normpath(image_path).replace("\\pages",'\\resources')
 
 def get_image_base64():
     with open(get_image_path(), "rb") as img_file:
@@ -162,4 +161,5 @@ def chatbox():
                 append_message(assistant_message)
                 #append_message(response)
                 st.session_state["assistant_response_processed"] = True
+
 
