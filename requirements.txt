@@ -1,12 +1,10 @@
 openpyxl
 streamlit
 pandas
-sys
-os
 streamlit_shadcn_ui
-warnings
 base64
 langchain
 re
 html
 openai
+
