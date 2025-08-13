@@ -59,7 +59,7 @@ def chatbox():
             "role": "assistant",
             "content": f"{initial}"    },
     ]
-    with open("resources\\UIs\\styles.md", "r") as styles_file:
+    with open("./resources/UIs/styles.md", "r") as styles_file:
         styles_content = styles_file.read()
 
 
@@ -155,6 +155,7 @@ def chatbox():
                 append_message(assistant_message)
                 #append_message(response)
                 st.session_state["assistant_response_processed"] = True
+
 
 
 
