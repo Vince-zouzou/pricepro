@@ -10,8 +10,8 @@ st.set_page_config(
 
 ## laod sample data
 data = {
-    "client" : pd.read_excel('resources\data\Copy of 10Jul_DummyData_v1.xlsx',sheet_name='ClientGroup'),
-    "transactions": pd.read_excel('resources\data\Copy of 10Jul_DummyData_v1.xlsx',sheet_name='TransactionData'),
+    "client" : pd.read_excel('resources/data/Copy of 10Jul_DummyData_v1.xlsx',sheet_name='ClientGroup'),
+    "transactions": pd.read_excel('resources/data/Copy of 10Jul_DummyData_v1.xlsx',sheet_name='TransactionData'),
 }
 
 st.session_state['data'] = data
@@ -19,9 +19,10 @@ data['client']['RoA'] = data['client']['Total Relationship Revenue']/data['clien
 
 
 pages = [
-    st.Page("pages\\Management.py",title="Client Management")]
+    st.Page("pages/Management.py",title="Client Management")]
 st.session_state['profile'] = st.Page("pages\\Profile.py",title="Client Profile")
-st.logo('resources\images\simon-kucher-seeklogo.png',size = 'large',link = 'https://www.simon-kucher.com')
+st.logo('resources/images/simon-kucher-seeklogo.png',size = 'large',link = 'https://www.simon-kucher.com')
 nav = st.navigation(pages,position='top')
+
 
 nav.run()
