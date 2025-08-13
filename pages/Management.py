@@ -4,8 +4,6 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 import streamlit as st  
 import streamlit_shadcn_ui as ui
-from st_aggrid import AgGrid, GridOptionsBuilder
-from streamlit_echarts import st_echarts as echart
 import pandas as pd
 from pages.Chatbox import chatbox
 
@@ -174,3 +172,4 @@ with datatable:
         row_height=35,
         height=35*(len(show_df)+1)
     )
+
