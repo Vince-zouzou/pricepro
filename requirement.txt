@@ -206,4 +206,5 @@ scikit-learn==1.7.1
 scipy==1.16.1
 six==1.17.0
 threadpoolctl==3.6.0
+openpyxl
 tzdata==2025.2
