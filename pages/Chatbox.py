@@ -15,7 +15,7 @@ warnings.filterwarnings("ignore")
 def get_image_path():
 
 
-    return ".//AI Brain.png"
+    return "/AI Brain.png"
 
 def get_image_base64():
     with open(get_image_path(), "rb") as img_file:
@@ -155,6 +155,7 @@ def chatbox():
                 append_message(assistant_message)
                 #append_message(response)
                 st.session_state["assistant_response_processed"] = True
+
 
 
 
