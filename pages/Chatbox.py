@@ -13,15 +13,9 @@ from streamlit_shadcn_ui import button
 warnings.filterwarnings("ignore")
 
 def get_image_path():
-    """获取图片的绝对路径"""
-    # 获取当前文件的绝对路径
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    # 拼接当前目录、images文件夹和图片名称
-    image_path = os.path.join(current_dir,"images", "AI Brain.png")
-    # 转换为网页可访问的路径
-    # 将路径中的 "\\pages" 替换为 "\\resources"，并将所有 "\\" 替换为 "/"
-    # 返回处理后的路径
-    return os.path.normpath(image_path).replace("\\pages",'\\resources')
+
+
+    return "AI Brain.png"
 
 def get_image_base64():
     with open(get_image_path(), "rb") as img_file:
@@ -161,5 +155,6 @@ def chatbox():
                 append_message(assistant_message)
                 #append_message(response)
                 st.session_state["assistant_response_processed"] = True
+
 
 
