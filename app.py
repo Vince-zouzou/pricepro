@@ -20,9 +20,9 @@ data['client']['RoA'] = data['client']['Total Relationship Revenue']/data['clien
 
 pages = [
     st.Page("pages/Management.py",title="Client Management")]
-st.session_state['profile'] = st.Page("pages\\Profile.py",title="Client Profile")
 st.logo('resources/images/simon-kucher-seeklogo.png',size = 'large',link = 'https://www.simon-kucher.com')
 nav = st.navigation(pages,position='top')
 
 
 nav.run()
+
