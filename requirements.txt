@@ -2,9 +2,9 @@ openpyxl
 streamlit
 pandas
 streamlit_shadcn_ui
-base64
 langchain
 re
 html
 openai
+
 
